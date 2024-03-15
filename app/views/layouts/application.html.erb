@@ -14,7 +14,10 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+    <%= link_to "Index", root_path %>
+
     <% if user_signed_in? %>
+      <%= link_to "New", new_blog_post_path %>
       <%= button_to "Log out", destroy_user_session_path, method: :delete %>
     <% end %>
 
