@@ -4,5 +4,5 @@
   <% if user_signed_in? %>
     <div class="p-2 rounded <%= blog_post_status_bg_color(blog_post)%> text-gray-900"><%= blog_post_status_text(blog_post) %></div>
   <% end %>
-  <p><%= blog_post.body %></post>
+  <p><%= blog_post.content %></post>
 <% end%>
